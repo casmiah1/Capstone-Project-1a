@@ -1,0 +1,520 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f6f2;
+    color: #203e38;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.section {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    min-height: 64px;
+    padding: 12px 5%;
+    border-bottom: 1px solid #e8e6df;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    white-space: nowrap;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 13px;
+}
+
+.navbar a:hover,
+.navbar .active {
+    color: #d18b68;
+}
+
+.navbar .nav-button {
+    background: #183f38;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 7px;
+}
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    background: #183f38;
+    color: white;
+    padding: 11px 21px;
+    border-radius: 7px;
+    font-size: 13px;
+    transition: background 0.3s;
+}
+
+.button:hover,
+.nav-button:hover {
+    background: #28584e;
+}
+
+/* HERO SECTION */
+
+.hero {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 55px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.2;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    background: linear-gradient(
+        transparent 65%,
+        #f5c5ad 65%
+    );
+}
+
+.hero p {
+    color: #53645f;
+    font-size: 14px;
+    margin-bottom: 23px;
+}
+
+.hero-image {
+    height: 380px;
+    margin-top: 38px;
+    border: 7px solid white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    height: 100%;
+}
+
+/* BENEFITS */
+
+.benefits {
+    padding: 45px 0;
+    border-bottom: 1px solid #e8e6df;
+}
+
+.benefits h2,
+.cta h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 28px;
+    line-height: 1.3;
+}
+
+.benefit-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.icon {
+    width: 38px;
+    height: 38px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.benefit-card p {
+    font-size: 13px;
+    color: #53645f;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 7%;
+    padding: 55px 0;
+}
+
+.about h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.about p {
+    font-size: 13px;
+    color: #53645f;
+    margin-bottom: 14px;
+}
+
+.about strong {
+    text-decoration: underline;
+    text-decoration-color: #f5c5ad;
+    text-decoration-thickness: 3px;
+}
+
+.about-image img {
+    height: 280px;
+    border-radius: 12px;
+}
+
+/* RECIPES */
+
+.recipes {
+    padding: 25px 0 55px;
+}
+
+.recipes h2 {
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background: white;
+    border: 1px solid #eeece6;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.recipe-card img {
+    height: 185px;
+}
+
+.recipe-content {
+    padding: 16px;
+}
+
+.recipe-content small {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #78877f;
+}
+
+.recipe-content h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 7px 0;
+}
+
+.recipe-content p {
+    color: #53645f;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.recipe-link {
+    font-size: 13px;
+    font-weight: bold;
+    color: #183f38;
+}
+
+.recipe-link:hover {
+    text-decoration: underline;
+}
+
+/* RECIPE INSTRUCTIONS */
+
+.instructions {
+    padding: 10px 0 50px;
+}
+
+.instructions > h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.instruction-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #eeece6;
+    scroll-margin-top: 80px;
+}
+
+.instruction-card h3 {
+    margin-bottom: 8px;
+}
+
+.instruction-card p {
+    font-size: 14px;
+    color: #53645f;
+    margin-bottom: 8px;
+}
+
+/* CALL TO ACTION */
+
+.cta {
+    background: #e8f0e9;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+}
+
+.cta h2 {
+    margin-bottom: 8px;
+}
+
+.cta p {
+    font-size: 13px;
+    color: #53645f;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 25px;
+    font-size: 12px;
+    color: #53645f;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #183f38;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 800px) {
+    .section,
+    .hero {
+        width: 90%;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .benefit-container {
+        gap: 20px;
+    }
+
+    .about {
+        gap: 5%;
+    }
+
+    .about-image img {
+        height: 230px;
+    }
+
+    .recipe-container {
+        gap: 12px;
+    }
+
+    .recipe-card img {
+        height: 150px;
+    }
+
+    .recipe-content {
+        padding: 12px;
+    }
+
+    .recipe-content h3 {
+        font-size: 15px;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+    .header {
+        padding: 14px 5%;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .navbar {
+        gap: 10px;
+        font-size: 11px;
+    }
+
+    .navbar .nav-button {
+        padding: 8px;
+    }
+
+    .hero {
+        padding-top: 38px;
+    }
+
+    .hero h1 {
+        font-size: clamp(29px, 7.5vw, 40px);
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .hero-image {
+        height: 230px;
+        margin-top: 28px;
+        border-width: 5px;
+    }
+
+    .benefits {
+        padding: 38px 0;
+    }
+
+    .benefits h2,
+    .cta h2 {
+        font-size: 26px;
+        margin-bottom: 22px;
+    }
+
+    .benefit-container {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 40px 0;
+    }
+
+    .about h2,
+    .recipes h2 {
+        font-size: 27px;
+    }
+
+    .about-image img {
+        height: 220px;
+    }
+
+    .recipe-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .recipe-card {
+        display: grid;
+        grid-template-columns: 37% 1fr;
+    }
+
+    .recipe-card img {
+        height: 100%;
+        min-height: 180px;
+    }
+
+    .recipe-content h3 {
+        font-size: 16px;
+    }
+
+    .recipe-content p {
+        font-size: 12px;
+    }
+
+    .cta {
+        padding: 38px 15px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
+
+/* SMALL MOBILE PHONES */
+
+@media (max-width: 420px) {
+    .header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .navbar .nav-button {
+        padding: 7px 10px;
+    }
+
+    .hero-image {
+        height: 200px;
+    }
+
+    .recipe-card {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-card img {
+        height: 170px;
+        min-height: 0;
+    }
+}
